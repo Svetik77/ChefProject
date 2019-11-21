@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>Bazar</module>
+  	<module>GUIWebapp</module>
   </modules>
 </project>
