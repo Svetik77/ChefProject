@@ -7,5 +7,6 @@
   <modules>
   	<module>Bazar</module>
   	<module>GUIWebapp</module>
+  	<module>LogicEJB</module>
   </modules>
 </project>
