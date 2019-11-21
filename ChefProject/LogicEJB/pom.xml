@@ -1,16 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>chef.project</groupId>
-    <artifactId>ChefProject</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>LogicEJB</artifactId>
-  <packaging>ejb</packaging>
-  
-  
-  
-		<build>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>chef.project</groupId>
+		<artifactId>ChefProject</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>LogicEJB</artifactId>
+	<packaging>ejb</packaging>
+
+
+
+	<build>
 		<finalName>LogicEJB</finalName>
 		<plugins>
 			<plugin>
@@ -22,8 +24,16 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			
-			
-			</plugins>
-  </build>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<configuration>
+					<ejbVersion>3.0</ejbVersion>
+				</configuration>
+			</plugin>
+
+
+		</plugins>
+	</build>
 </project>
