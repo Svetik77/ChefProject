@@ -2,5 +2,8 @@
     <wb-module deploy-name="Bazar-0.0.1-SNAPSHOT">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="GuiWebapp-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/chef/project/GuiWebapp/1.0-SNAPSHOT/GuiWebapp-1.0-SNAPSHOT.war">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
